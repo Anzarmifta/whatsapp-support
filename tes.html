@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kyoka Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#fff;
+color:#000;
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+nav h1{
+font-size:16px;
+letter-spacing:3px;
+font-weight:600;
+}
+
+nav a{
+text-decoration:none;
+color:#000;
+font-size:14px;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+font-size:clamp(36px,7vw,88px);
+font-weight:600;
+letter-spacing:-2px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+opacity:.7;
+max-width:500px;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 34px;
+border:1px solid #000;
+text-decoration:none;
+color:#000;
+font-size:14px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#000;
+color:#fff;
+}
+
+/* SECTION */
+.section{
+padding:120px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.section h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.section p{
+opacity:.7;
+line-height:1.6;
+}
+
+/* FOOTER */
+footer{
+padding:40px;
+text-align:center;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+nav{
+padding:16px 20px;
+}
+
+.hero p{
+font-size:16px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>KYOKA</h1>
+<a href="https://instagram.com/kyokastudio">Instagram</a>
+</nav>
+
+<section class="hero">
+<h2>Kyoka Studio</h2>
+<p>Luxury minimal outfit brand inspired by modern Japanese aesthetics.</p>
+<a class="btn" href="https://instagram.com/kyokastudio">Coming Soon</a>
+</section>
+
+<section class="section">
+<h3>About</h3>
+<p>
+Kyoka Studio explores clean silhouettes, monochrome tones, and refined textures.
+A modern expression of minimal luxury designed for everyday presence.
+</p>
+</section>
+
+<footer>
+© 2026 Kyoka Studio
+</footer>
+
+</body>
+</html>
